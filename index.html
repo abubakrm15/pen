@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalam — Premium ruchkalar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="intro" id="intro">
+        <div class="intro__panel intro__panel--left"></div>
+        <div class="intro__panel intro__panel--right"></div>
+        <div class="intro__content">
+            <div class="intro__logo">
+                <img class="logo__mark" src="logo.svg" alt="">
+                <span class="intro__name">Qalam</span>
+            </div>
+            <p class="intro__tagline">Har bir so'z qadrli</p>
+            <div class="intro__line"><span class="intro__fill"></span></div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img class="logo__mark" src="logo.svg" alt="">
+                <span class="logo__text">Qalam</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link nav__link--active">Bosh sahifa</a></li>
+                    <li><a href="#collection" class="nav__link">Kolleksiya</a></li>
+                    <li><a href="#reviews" class="nav__link">Fikrlar</a></li>
+                    <li><a href="#contact" class="nav__link">Aloqa</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="icon-btn theme-btn" id="themeBtn" aria-label="Rejimni almashtirish">
+                    <img class="theme-btn__moon ic--ink" src="icons/moon.svg" width="20" height="20" alt="">
+                    <img class="theme-btn__sun ic--ink" src="icons/sun.svg" width="20" height="20" alt="">
+                </button>
+                <button class="icon-btn" id="searchBtn" aria-label="Qidirish">
+                    <img class="ic--ink" src="icons/search.svg" width="20" height="20" alt="">
+                </button>
+                <button class="icon-btn cart-btn" id="cartBtn" aria-label="Savat">
+                    <img class="ic--ink" src="icons/cart.svg" width="20" height="20" alt="">
+                    <span class="cart-btn__count" id="cartCount">0</span>
+                </button>
+                <button class="burger" id="burger" aria-label="Menyu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="eyebrow">2026 yangi kolleksiya</span>
+                    <h1 class="hero__title">Har bir so'z <em>qadrli</em> — uni munosib ruchka bilan yozing</h1>
+                    <p class="hero__text">Qo'lda yig'ilgan, guruch va qora daraxtdan ishlangan premium ruchkalar. Siyohning silliq oqimi va umrbod kafolat.</p>
+                    <div class="hero__buttons">
+                        <a href="#collection" class="btn btn--primary">Kolleksiyani ko'rish</a>
+                        <a href="#reviews" class="btn btn--ghost">Fikrlarni o'qish</a>
+                    </div>
+                    <ul class="hero__stats">
+                        <li><strong>12+</strong><span>yillik tajriba</span></li>
+                        <li><strong>48k</strong><span>mamnun mijoz</span></li>
+                        <li><strong>4.9</strong><span>o'rtacha baho</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__frame">
+                        <img class="hero__img" id="heroImg" src="https://images.unsplash.com/photo-1509824189536-24ab5d1ecb00?auto=format&fit=crop&w=1000&q=80" alt="Qora va oltin rang perili ruchka">
+                    </div>
+                    <div class="hero__thumb">
+                        <img src="https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?auto=format&fit=crop&w=400&q=80" alt="Oltin pero">
+                    </div>
+                    <div class="hero__badge">
+                        <span class="hero__badge-label">Bestseller</span>
+                        <span class="hero__badge-title">Navoiy Gold</span>
+                        <span class="hero__badge-price">890 000 so'm</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container features__grid">
+                <article class="feature">
+                    <img class="feature__img" src="https://images.unsplash.com/photo-1546638008-efbe0b62c730?auto=format&fit=crop&w=600&q=80" alt="Qo'lda yozish">
+                    <div class="feature__icon">
+                        <img src="icons/star.svg" width="26" height="26" alt="">
+                    </div>
+                    <h3 class="feature__title">Qo'lda yig'ilgan</h3>
+                    <p class="feature__text">Har bir ruchka ustaxonamizda 40 dan ortiq bosqichdan o'tadi.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__img" src="https://images.unsplash.com/photo-1517664121940-f819957bb072?auto=format&fit=crop&w=600&q=80" alt="Siyoh tomchisi">
+                    <div class="feature__icon">
+                        <img src="icons/drop.svg" width="26" height="26" alt="">
+                    </div>
+                    <h3 class="feature__title">Silliq siyoh oqimi</h3>
+                    <p class="feature__text">Nemis uchliklari va maxsus siyoh tizimi — dog'siz yozuv.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__img" src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?auto=format&fit=crop&w=600&q=80" alt="Qora va kumush ruchka">
+                    <div class="feature__icon">
+                        <img src="icons/shield.svg" width="26" height="26" alt="">
+                    </div>
+                    <h3 class="feature__title">Umrbod kafolat</h3>
+                    <p class="feature__text">Ishlab chiqarish nuqsonlari uchun bepul ta'mirlash.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__img" src="https://images.unsplash.com/photo-1531087131490-07836ca4341d?auto=format&fit=crop&w=600&q=80" alt="Sovg'a uchun ruchka">
+                    <div class="feature__icon">
+                        <img src="icons/truck.svg" width="26" height="26" alt="">
+                    </div>
+                    <h3 class="feature__title">Bepul yetkazish</h3>
+                    <p class="feature__text">O'zbekiston bo'ylab 1–3 kun ichida, sovg'a qutisida.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Kolleksiya</span>
+                    <h2 class="section-title">O'zingizga mos ruchkani tanlang</h2>
+                </div>
+
+                <div class="filters" id="filters">
+                    <button class="filter filter--active" data-filter="all">Barchasi</button>
+                    <button class="filter" data-filter="fountain">Perili</button>
+                    <button class="filter" data-filter="ballpoint">Sharikli</button>
+                    <button class="filter" data-filter="rollerball">Roller</button>
+                    <button class="filter" data-filter="set">To'plamlar</button>
+                </div>
+
+                <div class="products" id="products">
+                    <article class="product" data-category="fountain" data-id="1">
+                        <div class="product__media product__media--ink">
+                            <span class="product__tag">Yangi</span>
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?auto=format&fit=crop&w=800&q=80" alt="Navoiy Gold perili ruchka">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">Perili ruchka</span>
+                            <h3 class="product__name">Navoiy Gold</h3>
+                            <div class="product__rating"><span class="stars">★★★★★</span><span>(214)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="890000">890 000 so'm</span>
+                                <button class="add-btn" data-id="1" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="ballpoint" data-id="2">
+                        <div class="product__media product__media--ebony">
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1546493918-8bcb44f37c8e?auto=format&fit=crop&w=800&q=80" alt="Samarqand Noir sharikli ruchka">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">Sharikli ruchka</span>
+                            <h3 class="product__name">Samarqand Noir</h3>
+                            <div class="product__rating"><span class="stars">★★★★★</span><span>(178)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="420000">420 000 so'm</span>
+                                <button class="add-btn" data-id="2" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="rollerball" data-id="3">
+                        <div class="product__media product__media--burgundy">
+                            <span class="product__tag product__tag--sale">-20%</span>
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1580127645995-d43fe9598711?auto=format&fit=crop&w=800&q=80" alt="Buxoro Rubin roller ruchka">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">Roller ruchka</span>
+                            <h3 class="product__name">Buxoro Rubin</h3>
+                            <div class="product__rating"><span class="stars">★★★★☆</span><span>(96)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="512000">512 000 so'm <s>640 000</s></span>
+                                <button class="add-btn" data-id="3" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="fountain" data-id="4">
+                        <div class="product__media product__media--forest">
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?auto=format&fit=crop&w=800&q=80" alt="Xiva Zumrad perili ruchka">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">Perili ruchka</span>
+                            <h3 class="product__name">Xiva Zumrad</h3>
+                            <div class="product__rating"><span class="stars">★★★★★</span><span>(132)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="760000">760 000 so'm</span>
+                                <button class="add-btn" data-id="4" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="ballpoint" data-id="5">
+                        <div class="product__media product__media--ivory">
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1587303988571-c5563c0bceab?auto=format&fit=crop&w=800&q=80" alt="Toshkent Pearl sharikli ruchka">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">Sharikli ruchka</span>
+                            <h3 class="product__name">Toshkent Pearl</h3>
+                            <div class="product__rating"><span class="stars">★★★★☆</span><span>(64)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="350000">350 000 so'm</span>
+                                <button class="add-btn" data-id="5" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="set" data-id="6">
+                        <div class="product__media product__media--gold">
+                            <span class="product__tag">Sovg'a</span>
+                            <button class="product__fav" aria-label="Sevimlilar">
+                                <img class="product__heart" src="icons/heart.svg" width="18" height="18" alt=""><img class="product__heart product__heart--filled" src="icons/heart-filled.svg" width="18" height="18" alt="">
+                            </button>
+                            <img class="product__img" src="https://images.unsplash.com/photo-1617177435596-1c9e30d6d608?auto=format&fit=crop&w=800&q=80" alt="Duet Executive to'plami">
+                        </div>
+                        <div class="product__info">
+                            <span class="product__type">To'plam</span>
+                            <h3 class="product__name">Duet Executive</h3>
+                            <div class="product__rating"><span class="stars">★★★★★</span><span>(88)</span></div>
+                            <div class="product__bottom">
+                                <span class="product__price" data-price="1190000">1 190 000 so'm</span>
+                                <button class="add-btn" data-id="6" aria-label="Savatga qo'shish">+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Mijozlar fikri</span>
+                    <h2 class="section-title">Ular allaqachon yozishmoqda</h2>
+                </div>
+
+                <div class="reviews__slider" id="reviewsSlider">
+                    <blockquote class="review review--active">
+                        <p class="review__text">"Navoiy Gold'ni dadamga sovg'a qildim. Gravyura juda nafis chiqdi, qutisi ham alohida san'at asari."</p>
+                        <footer class="review__author">
+                            <img class="review__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&h=160&q=80" alt="Madina Karimova">
+                            <span><strong>Madina Karimova</strong><small>Toshkent</small></span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="review">
+                        <p class="review__text">"Kuniga shartnomalar imzolayman. Samarqand Noir qo'lda og'irligi mukammal, siyoh hech qachon to'xtamaydi."</p>
+                        <footer class="review__author">
+                            <img class="review__avatar" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=160&h=160&q=80" alt="Jasur Rahimov">
+                            <span><strong>Jasur Rahimov</strong><small>Samarqand</small></span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="review">
+                        <p class="review__text">"Kalligrafiya bilan shug'ullanaman — Xiva Zumrad perosi chiziqlarni juda yumshoq beradi. Tavsiya qilaman!"</p>
+                        <footer class="review__author">
+                            <img class="review__avatar" src="https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=160&h=160&q=80" alt="Nilufar Aliyeva">
+                            <span><strong>Nilufar Aliyeva</strong><small>Buxoro</small></span>
+                        </footer>
+                    </blockquote>
+                </div>
+
+                <div class="reviews__controls">
+                    <button class="round-btn" id="prevReview" aria-label="Oldingi">←</button>
+                    <div class="dots" id="reviewDots">
+                        <span class="dot dot--active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="round-btn" id="nextReview" aria-label="Keyingi">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container newsletter__inner">
+                <img class="newsletter__img" src="https://images.unsplash.com/photo-1486303954368-398fea0e72cd?auto=format&fit=crop&w=1400&q=80" alt="">
+                <div class="newsletter__content">
+                    <h2 class="newsletter__title">Yangiliklardan birinchi bo'lib xabardor bo'ling</h2>
+                    <p class="newsletter__text">Obuna bo'ling va birinchi xaridga 10% chegirma oling.</p>
+                </div>
+                <form class="newsletter__form" id="newsletterForm">
+                    <input type="email" class="newsletter__input" id="newsletterEmail" placeholder="Email manzilingiz" required>
+                    <button type="submit" class="btn btn--primary">Obuna bo'lish</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer__perks">
+            <div class="perk">
+                <span class="perk__icon">
+                    <img src="icons/truck.svg" width="24" height="24" alt="">
+                </span>
+                <div>
+                    <strong class="perk__title">Bepul yetkazish</strong>
+                    <span class="perk__text">Butun O'zbekiston bo'ylab 1–3 kun</span>
+                </div>
+            </div>
+            <div class="perk">
+                <span class="perk__icon">
+                    <img src="icons/return.svg" width="24" height="24" alt="">
+                </span>
+                <div>
+                    <strong class="perk__title">14 kun ichida qaytarish</strong>
+                    <span class="perk__text">Savolsiz, to'liq pul qaytariladi</span>
+                </div>
+            </div>
+            <div class="perk">
+                <span class="perk__icon">
+                    <img src="icons/shield.svg" width="24" height="24" alt="">
+                </span>
+                <div>
+                    <strong class="perk__title">Umrbod kafolat</strong>
+                    <span class="perk__text">Har bir ruchka uchun rasmiy guvohnoma</span>
+                </div>
+            </div>
+            <div class="perk">
+                <span class="perk__icon">
+                    <img src="icons/support.svg" width="24" height="24" alt="">
+                </span>
+                <div>
+                    <strong class="perk__title">24/7 qo'llab-quvvatlash</strong>
+                    <span class="perk__text">Telegram va telefon orqali</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="#" class="logo logo--light">
+                    <img class="logo__mark" src="logo.svg" alt="">
+                    <span class="logo__text">Qalam</span>
+                </a>
+                <p class="footer__about">2014-yildan beri yozuv madaniyatini qadrlaydiganlar uchun premium ruchkalar. Toshkent, Samarqand va Buxorodagi do'konlarimizga tashrif buyuring.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram">
+                        <img src="icons/instagram.svg" width="18" height="18" alt="">
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <img src="icons/telegram.svg" width="18" height="18" alt="">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="icons/facebook.svg" width="18" height="18" alt="">
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="icons/youtube.svg" width="18" height="18" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Do'kon</h4>
+                <a href="#collection">Perili ruchkalar</a>
+                <a href="#collection">Sharikli ruchkalar</a>
+                <a href="#collection">Roller ruchkalar</a>
+                <a href="#collection">Sovg'a to'plamlari</a>
+                <a href="#collection">Yangi kelganlar</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Yordam</h4>
+                <a href="#">Yetkazib berish</a>
+                <a href="#">To'lov usullari</a>
+                <a href="#">Qaytarish va almashtirish</a>
+                <a href="#">Kafolat xizmati</a>
+                <a href="#">Ko'p beriladigan savollar</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Kompaniya</h4>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Ustaxonamiz</a>
+                <a href="#">Korporativ buyurtmalar</a>
+                <a href="#">Vakansiyalar</a>
+                <a href="#reviews">Mijozlar fikri</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Aloqa</h4>
+                <a href="tel:+998901234567" class="footer__contact">
+                    <img src="icons/phone.svg" width="18" height="18" alt="">
+                    +998 90 123 45 67
+                </a>
+                <a href="mailto:info@qalam.uz" class="footer__contact">
+                    <img src="icons/mail.svg" width="18" height="18" alt="">
+                    info@qalam.uz
+                </a>
+                <span class="footer__contact">
+                    <img src="icons/location.svg" width="18" height="18" alt="">
+                    Toshkent, Amir Temur ko'chasi 15
+                </span>
+                <span class="footer__contact">
+                    <img src="icons/clock.svg" width="18" height="18" alt="">
+                    Har kuni 09:00 – 21:00
+                </span>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <span>© 2026 Qalam. Barcha huquqlar himoyalangan.</span>
+            <div class="footer__pay">
+                <span class="footer__pay-label">To'lov:</span>
+                <span class="pay-badge">Payme</span>
+                <span class="pay-badge">Click</span>
+                <span class="pay-badge">Uzcard</span>
+                <span class="pay-badge">Humo</span>
+                <span class="pay-badge">Visa</span>
+            </div>
+            <div class="footer__legal">
+                <a href="#">Maxfiylik siyosati</a>
+                <a href="#">Foydalanish shartlari</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay" id="cartOverlay"></div>
+
+    <aside class="cart" id="cart" aria-label="Savat">
+        <div class="cart__head">
+            <div>
+                <h3 class="cart__title">Buyurtmalaringiz</h3>
+                <span class="cart__subtitle" id="cartSubtitle">0 ta mahsulot</span>
+            </div>
+            <button class="cart__close" id="cartClose" aria-label="Yopish">
+                <img class="ic--ink" src="icons/close.svg" width="20" height="20" alt="">
+            </button>
+        </div>
+
+        <div class="cart__empty" id="cartEmpty">
+            <div class="cart__empty-icon">
+                <img class="ic--ink" src="icons/cart.svg" width="34" height="34" alt="">
+            </div>
+            <p class="cart__empty-title">Savat hozircha bo'sh</p>
+            <p class="cart__empty-text">Kolleksiyadan o'zingizga yoqqan ruchkani tanlang.</p>
+            <a href="#collection" class="btn btn--ghost" id="cartBrowse">Kolleksiyaga o'tish</a>
+        </div>
+
+        <ul class="cart__list" id="cartList"></ul>
+
+        <div class="cart__footer" id="cartFooter">
+            <div class="cart__row">
+                <span>Mahsulotlar</span>
+                <span id="cartSubtotal">0 so'm</span>
+            </div>
+            <div class="cart__row">
+                <span>Yetkazib berish</span>
+                <span class="cart__free">Bepul</span>
+            </div>
+            <div class="cart__row cart__row--total">
+                <span>Jami</span>
+                <span id="cartTotal">0 so'm</span>
+            </div>
+            <button class="btn btn--primary cart__checkout" id="cartCheckout">Buyurtmani rasmiylashtirish</button>
+        </div>
+    </aside>
+
+    <div class="toast" id="toast">Savatga qo'shildi</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
